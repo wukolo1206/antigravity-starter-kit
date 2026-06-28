@@ -1,0 +1,23 @@
+# Git 忽略檔案
+
+# Google 敏感憑證與通行證
+google workspace/credentials.json
+google workspace/token.json
+google workspace/token_drive_upload.json
+
+# 本地備份檔案
+*.bak
+*.bak2
+*.bak3
+
+# Python 編譯快取
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# 本地產出的 Word / Excel 成果（避免學員重複上傳）
+*.docx
+*.xlsx
+!cards/**/*.xlsx  # 保留 cards 目錄下的基準模擬名冊
