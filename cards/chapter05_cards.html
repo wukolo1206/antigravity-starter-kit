@@ -640,22 +640,23 @@
     <div class="brand">
       <div class="brand-mark">05</div>
       <div>
-        <p class="brand-title">AI Agent Antigravity 研習圖卡</p>
+        <p class="brand-title">AI Agent 研習圖卡 (Codex / Antigravity 通用版)</p>
         <p class="brand-subtitle">第五章實戰二｜教材題本分析與類似題生成</p>
       </div>
     </div>
     <div>
       <select class="chapter-select" onchange="window.location.href=this.value;" aria-label="切換單元">
+        <option value="index.html">🏠 研習圖卡總首頁</option>
         <option value="chapter01_cards.html">第一單元：運作原理</option>
         <option value="chapter02_cards.html">第二單元：操作與介面</option>
-        <option value="chapter03_cards.html">第三單元：親師溝通體驗</option>
+        <option value="chapter03_cards.html">第三單元：期末催繳體驗</option>
         <option value="chapter04_cards.html">第四單元：成績登錄體驗</option>
         <option selected value="chapter05_cards.html">第五單元：類似題生成體驗</option>
         <option value="chapter06_cards.html">第六單元：GitHub 發布體驗</option>
         <option value="chapter07_cards.html">第七單元：Google表單自動化出題</option>
-        <option value="chapter08_cards.html">第八單元：Custom Skill 技能包</option>
-        <option value="chapter09_cards.html">第九單元：MCP 雲端工具串接</option>
-        <option value="chapter10_cards.html">第十單元：雲端Google簡報與表單</option>
+        <option value="chapter08_cards.html">第八單元：雲端Google簡報與圖表</option>
+        <option value="chapter09_cards.html">第九單元：Custom Skill 技能包</option>
+        <option value="chapter10_cards.html">第十單元：MCP 雲端工具串接</option>
       </select>
     </div>
     <div class="progress" id="progress">1 / 13</div>
@@ -733,7 +734,7 @@
         <div class="card-inner">
           <div>
             <p class="eyebrow">任務目標</p>
-            <h2>由 Antigravity 實現教材到題卷的轉換</h2>
+            <h2>由 AI Agent 實現教材到題卷的轉換</h2>
             <p class="lead">只需下一句口語指令，AI 自主讀取 PDF、分析題型、生成類似題，並輸出學生版與教師版檔案。</p>
           </div>
           <div class="visual">
@@ -759,11 +760,11 @@
           <div>
             <p class="eyebrow">準備工作</p>
             <h2>本機資料夾的「食材」配置</h2>
-            <p class="lead">請確保專案目錄的 cards/ch5出題/ 資料夾下已放置以下檔案：</p>
+            <p class="lead">請確保專案目錄的  資料夾下已放置以下檔案：</p>
           </div>
           <div class="visual">
             <div class="board" style="text-align: left; padding: 18px;">
-              <p><strong>📂 練習檔案路徑：<code>cards/ch5出題/</code></strong></p>
+              <p><strong>📂 練習檔案路徑：<code></code></strong></p>
               <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
                 <thead>
                   <tr style="background: #eaf4ee; border-bottom: 2px solid var(--ink);">
@@ -863,8 +864,8 @@
           <div class="visual">
             <div class="board" style="font-family: monospace; font-size: 13px; text-align: left; padding: 18px;">
               <p style="color: var(--blue); margin: 0;"># Agent 讀取本機 PDF：</p>
-              <p style="margin: 4px 0 12px;">read_pdf("cards/ch5出題/01_國小國語3下各課生字詞語解釋.pdf")</p>
-              <p style="margin: 4px 0 12px;">read_pdf("cards/ch5出題/115年縣市學習能力檢測題本三年級國語科題本.pdf")</p>
+              <p style="margin: 4px 0 12px;">read_pdf("01_國小國語3下各課生字詞語解釋.pdf")</p>
+              <p style="margin: 4px 0 12px;">read_pdf("115年縣市學習能力檢測題本三年級國語科題本.pdf")</p>
               <p style="color: var(--blue); margin: 0;"># Agent 建立題型地圖：</p>
               <p style="margin: 4px 0 0;">題型 = 字詞理解 / 句意判斷 / 文意推論 / 閱讀理解 / 短答表達</p>
               <p style="color: var(--green); margin-top: 12px; font-weight: bold; font-family: sans-serif;">🌟 重點是先讀教材，再出題；不是讓 AI 憑空編一張考卷。</p>
