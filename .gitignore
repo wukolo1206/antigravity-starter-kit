@@ -6,7 +6,7 @@ google workspace/token.json
 google workspace/token_drive_upload.json
 
 # 學員自己的交接簿（實戰八，可能含工作細節，不上傳公開倉庫）
-handoff.md
+/handoff.md
 
 # 本地備份檔案
 *.bak
